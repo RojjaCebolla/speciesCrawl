@@ -2022,6 +2022,14 @@ static const mutation_def mut_data[] =
   {"You feel less resistant to acid.", "", ""},
 },
 
+{ MUT_DAB_MASTER, 1, 1, mutflag::good, false,
+  "dab master",
+
+  {"You dab whenever you relax, stunning your foes.", "", ""},
+  {"You can dab.", "", ""},
+  {"You can't dab.", "", ""},
+},
+
 { MUT_QUADRUMANOUS, 0, 1, mutflag::good, false,
   "four strong arms",
 

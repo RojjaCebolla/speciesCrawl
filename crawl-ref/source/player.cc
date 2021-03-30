@@ -1905,6 +1905,27 @@ void update_acrobat_status()
     you.redraw_evasion = true;
 }
 
+void dab_on_them_haters()
+{
+    if (!you.has_mutation(MUT_DAB_MASTER))
+        return;
+    for (monster_near_iterator mi(&you); mi; ++mi)
+    {
+        monster *mons = *mi;
+        //no dabbing on invisible monsters
+        if (mons->visible_to(&you) && coinflip())
+        {
+            mprf("You dab on %s.", mons->name(DESC_THE).c_str());
+            if (x_chance_in_y(4,20))
+            {
+                mprf("%s is dazed by your dab.", mons->name(DESC_THE).c_str());
+                mons->add_ench(mon_enchant(ENCH_DAZED, 0, &you,
+                            (10 + random2(10)) * BASELINE_DELAY));
+            }
+        }
+    }
+}
+
 // An evasion factor based on the player's body size, smaller == higher
 // evasion size factor.
 static int _player_evasion_size_factor(bool base = false)

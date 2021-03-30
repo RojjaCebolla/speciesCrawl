@@ -4,6 +4,11 @@ Barachi
 Barachim are amphibious humanoids who rebelled against the gods. They're fast
 learners and can hop long distances, but are otherwise slow and easily seen.
 %%%%
+Dab Dwarf
+
+Dab Dwarves have perfected the ancient art of dab-meditation. They can dab on
+many foes at once and may even daze their foes with the power of dab.
+%%%%
 Deep Dwarf
 
 Deep Dwarves live underground and cannot regenerate health naturally, but they
