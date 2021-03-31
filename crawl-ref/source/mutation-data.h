@@ -2022,6 +2022,16 @@ static const mutation_def mut_data[] =
   {"You feel less resistant to acid.", "", ""},
 },
 
+{ MUT_BLINKITIS, 1, 3, mutflag::bad | mutflag::xom, false,
+  "blinking",
+
+  {"You blink around.", 
+   "You just keep blinking around.",
+   "You can't stop blinking around."},
+  {"You're a tiny bit unstable.", "You're more unstable.", "QUITE UNSTABLE!"},
+  {"You're a bit less unstable.", "You're less unstable.", "TOTALLY STABLE!"},
+},
+
 { MUT_DAB_MASTER, 1, 1, mutflag::good, false,
   "dab master",
 

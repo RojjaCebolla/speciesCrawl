@@ -993,7 +993,9 @@ void player_reacts()
             if (!crawl_state.disables[DIS_SAVE_CHECKPOINTS])
                 save_game(false);
         }
-        else if (you.form == transformation::wisp && !you.stasis())
+        else if ((!you.stasis()) && (you.form == transformation::wisp
+                 || you.has_mutation(MUT_BLINKITIS) && !i_feel_safe()
+                   && x_chance_in_y(you.get_mutation_level(MUT_BLINKITIS), 6)))
             uncontrolled_blink();
     }
 
