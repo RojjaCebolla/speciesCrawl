@@ -190,7 +190,7 @@ ALL_WEAPON_SKILLS = ('SK_SHORT_BLADES', 'SK_LONG_BLADES', 'SK_AXES',
     'SK_CROSSBOWS', 'SK_UNARMED_COMBAT')
 
 ALL_SPECIES_FLAGS = {'SPF_NO_HAIR', 'SPF_DRACONIAN', 'SPF_SMALL_TORSO',
-    'SPF_NO_BONES', 'SPF_BARDING'}
+    'SPF_NO_BONES', 'SPF_BARDING', 'SPF_DEMONIC'}
 
 def recommended_jobs(jobs):
     return ', '.join(validate_string(job, 'Job', 'JOB_[A-Z_]+') for job in jobs)

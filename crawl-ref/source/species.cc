@@ -126,6 +126,11 @@ namespace species
         return species == SP_HILL_ORC;
     }
 
+    bool is_demonic(species_type species)
+    {
+        return bool(get_species_def(species).flags & SPF_DEMONIC);
+    }
+
     bool is_undead(species_type species)
     {
         return undead_type(species) != US_ALIVE;

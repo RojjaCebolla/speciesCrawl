@@ -6132,7 +6132,7 @@ mon_holy_type player::holiness(bool temp) const
         holi |= MH_HOLY;
 
     if (is_evil_god(religion)
-        || species == SP_DEMONSPAWN || you.has_mutation(MUT_VAMPIRISM))
+        || species::is_demonic(you.species) || you.has_mutation(MUT_VAMPIRISM))
     {
         holi |= MH_EVIL;
     }
@@ -6146,7 +6146,7 @@ mon_holy_type player::holiness(bool temp) const
 bool player::undead_or_demonic(bool temp) const
 {
     // This is only for TSO-related stuff, so demonspawn are included.
-    return undead_state(temp) || species == SP_DEMONSPAWN;
+    return undead_state(temp) || species::is_demonic(you.species);
 }
 
 bool player::is_holy() const
