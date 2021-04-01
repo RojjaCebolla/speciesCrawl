@@ -3849,16 +3849,12 @@ static tileidx_t _tileidx_player_species_base(const species_type species)
 {
     switch (species)
     {
-        case SP_HUMAN:
-            return TILEG_SP_HUMAN;
         case SP_DEEP_ELF:
             return TILEG_SP_DEEP_ELF;
         case SP_HILL_ORC:
             return TILEG_SP_HILL_ORC;
         case SP_KOBOLD:
             return TILEG_SP_KOBOLD;
-        case SP_MUMMY:
-            return TILEG_SP_MUMMY;
         case SP_NAGA:
             return TILEG_SP_NAGA;
         case SP_OGRE:
@@ -3873,8 +3869,6 @@ static tileidx_t _tileidx_player_species_base(const species_type species)
             return TILEG_SP_DEMIGOD;
         case SP_SPRIGGAN:
             return TILEG_SP_SPRIGGAN;
-        case SP_MINOTAUR:
-            return TILEG_SP_MINOTAUR;
         case SP_DEMONSPAWN:
             return TILEG_SP_DEMONSPAWN;
         case SP_GHOUL:

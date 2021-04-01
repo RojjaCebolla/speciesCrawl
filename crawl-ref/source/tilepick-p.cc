@@ -581,8 +581,6 @@ tileidx_t tilep_species_to_base_tile(int sp, int level)
 {
     switch (sp)
     {
-    case SP_HUMAN:
-        return TILEP_BASE_HUMAN;
 #if TAG_MAJOR_VERSION == 34
     case SP_HIGH_ELF:
     case SP_SLUDGE_ELF:
@@ -592,13 +590,15 @@ tileidx_t tilep_species_to_base_tile(int sp, int level)
 #if TAG_MAJOR_VERSION == 34
     case SP_HALFLING:
         return TILEP_BASE_HALFLING;
+    case SP_HUMAN:
+        return TILEP_BASE_HUMAN;
+    case SP_MUMMY:
+        return TILEP_BASE_MUMMY;
 #endif
     case SP_HILL_ORC:
         return TILEP_BASE_ORC;
     case SP_KOBOLD:
         return TILEP_BASE_KOBOLD;
-    case SP_MUMMY:
-        return TILEP_BASE_MUMMY;
     case SP_NAGA:
         return TILEP_BASE_NAGA;
     case SP_OGRE:
@@ -621,14 +621,14 @@ tileidx_t tilep_species_to_base_tile(int sp, int level)
     case SP_PALENTONGA:
 #if TAG_MAJOR_VERSION == 34
     case SP_CENTAUR:
+    case SP_MINOTAUR:
+        return TILEP_BASE_MINOTAUR;
 #endif
         return TILEP_BASE_PALENTONGA;
     case SP_DEMIGOD:
         return TILEP_BASE_DEMIGOD;
     case SP_SPRIGGAN:
         return TILEP_BASE_SPRIGGAN;
-    case SP_MINOTAUR:
-        return TILEP_BASE_MINOTAUR;
     case SP_DEMONSPAWN:
         return TILEP_BASE_DEMONSPAWN;
     case SP_GHOUL:
@@ -737,12 +737,10 @@ void tilep_race_default(int sp, int level, dolls_data *doll)
             hair = 0;
             beard = TILEP_BEARD_MEDIUM_GREEN;
             break;
-        case SP_MINOTAUR:
         case SP_DEMONSPAWN:
         case SP_GHOUL:
         case SP_HILL_ORC:
         case SP_KOBOLD:
-        case SP_MUMMY:
         case SP_FORMICID:
         case SP_BARACHI:
         case SP_GNOLL:

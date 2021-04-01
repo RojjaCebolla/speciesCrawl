@@ -280,11 +280,6 @@ felids/cat3 SP_RECOMMENDED_FELID
 %compose body/animal_skin
 %finish SP_RECOMMENDED_GNOLL
 %start
-%compose base/human_f
-%compose body/animal_skin
-%compose hair/short_black
-%finish SP_RECOMMENDED_HUMAN
-%start
 %compose base/kobold_m
 %compose body/animal_skin
 %finish SP_RECOMMENDED_KOBOLD
@@ -293,11 +288,6 @@ felids/cat3 SP_RECOMMENDED_FELID
 %compose body/animal_skin
 %compose hair/green
 %finish SP_RECOMMENDED_MERFOLK
-%start
-%compose base/minotaur_m
-%compose body/animal_skin
-%compose head/horns2
-%finish SP_RECOMMENDED_MINOTAUR
 base/mummy_m SP_RECOMMENDED_MUMMY
 %start
 %compose base/naga_f
@@ -359,11 +349,8 @@ enum:SP_RECOMMENDED_BARACHI SP_BARACHI
 enum:SP_RECOMMENDED_GARGOYLE SP_GARGOYLE
 enum:SP_RECOMMENDED_GHOUL SP_GHOUL
 enum:SP_RECOMMENDED_GNOLL SP_GNOLL
-enum:SP_RECOMMENDED_HUMAN SP_HUMAN
 enum:SP_RECOMMENDED_KOBOLD SP_KOBOLD
 enum:SP_RECOMMENDED_MERFOLK SP_MERFOLK
-enum:SP_RECOMMENDED_MINOTAUR SP_MINOTAUR
-enum:SP_RECOMMENDED_MUMMY SP_MUMMY
 enum:SP_RECOMMENDED_NAGA SP_NAGA
 enum:SP_RECOMMENDED_OCTOPODE SP_OCTOPODE
 enum:SP_RECOMMENDED_OGRE SP_OGRE

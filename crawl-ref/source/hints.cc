@@ -297,7 +297,7 @@ static species_type _get_hints_species(unsigned int type)
     case HINT_MAGIC_CHAR:
         return SP_DEEP_ELF;
     case HINT_RANGER_CHAR:
-        return SP_MINOTAUR;
+        return SP_TENGU;
     default:
         // Use something fancy for debugging.
         return SP_TENGU;
